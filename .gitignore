@@ -1,0 +1,23 @@
+# .gitignore for average.c and average.asm
+
+# Ignore compiled binaries
+*.o
+*.out
+*.exe
+
+# Ignore temporary files
+*.log
+*.tmp
+*.swp
+*~
+
+# Ignore build directories
+/build/
+/bin/
+/obj/
+
+# Ignore IDE and editor files
+.vscode/
+.idea/
+*.iml
+.DS_Store
