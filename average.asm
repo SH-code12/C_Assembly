@@ -18,7 +18,7 @@ main:
     li $v0, 4  
     syscall
 
-    # Call average fun for arrays
+    # Call averagefun for arrays
     la $a0, array  
     la $a1, array2 
     jal calculate_average
@@ -76,8 +76,8 @@ loop:
 
     # Increment counter and array pointers
     addi $t0, $t0, 1
-    addi $a0, $a0, 4  # Move to next element in array1 --> (4 because intger 4bytes)
-    addi $a1, $a1, 4  # Move to next element in array2 --> (4 because intger 4bytes)
+    addi $a0, $a0, 4  # Move to next index in a1 --> (4 because intger 4bytes)
+    addi $a1, $a1, 4  # Move to next index in 2 --> (4 because intger 4bytes)
     j loop
 
 compute_averages:
