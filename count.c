@@ -12,7 +12,7 @@ int count=0;
 int main() {
     int arr1[] = {10, 31, 5, 7, 11, 3, 8, 40, 12, 4};
     int arr2[] = {19, 2, 3, 7, 5, 10, 9, 0, 6, 1};
-    int size = 10;
+    int size = sizeof(arr1) / sizeof(arr1[0]);
 
 
     int count1 = count(arr1,size);
